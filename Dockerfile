@@ -13,12 +13,6 @@ RUN chown -R www-data /var/moodledata && \
     chmod -R 777 /var/moodledata && \
     chmod -R 777 /var/www/html/moodle
 
-#COPY moodle.conf /etc/apache2/sites-available/
-
-#RUN a2enmod rewrite && \
-#   a2ensite moodle.conf && \
-#    a2dissite 000-default.conf
-
 RUN service apache2 restart
 
 EXPOSE 80
