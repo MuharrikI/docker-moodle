@@ -11,7 +11,7 @@ RUN mkdir /var/moodledata
 
 RUN chown -R www-data /var/moodledata && \
     chmod -R 777 /var/moodledata && \
-    chmod -R 0755 /var/www/html/moodle
+    chmod -R 777 /var/www/html/moodle
 
 RUN service apache2 restart
 
