@@ -5,7 +5,7 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 RUN apt-get update && apt-get install -y apache2 php libapache2-mod-php
 RUN apt-get install -y graphviz aspell ghostscript clamav php-pspell php-curl php-gd php-intl php-mysql php-xml php-xmlrpc php-ldap php-zip php-soap php-mbstring
 
-COPY moodle /var/www/html/
+COPY moodle /var/www/html/moodle
 
 RUN mkdir /var/moodledata
 
